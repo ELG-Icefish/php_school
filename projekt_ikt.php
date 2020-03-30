@@ -9,7 +9,7 @@
   if(isset($_COOKIE[$cookie])) {
     echo "Sie sind als $_COOKIE[$cookie] angemeldet";
     echo "<br>";
-    echo '<a href="http://localhost/onlineshop/shop.php">Weiter</a>';
+    echo '<a href="shop.php">Weiter</a>';
     echo "<br>";
     echo'Benutzer wechseln:<br>';
     echo '
@@ -32,12 +32,12 @@
   exit();
   }
   else {
-  echo "Verbunden<br>";
+  //echo "Verbunden<br>";
   }
   ?>
   <?php
   if ((empty($_POST["username"]))||(empty($_POST["password"]))) {
-echo ';</head>';
+echo '</head>';
 echo'<body>';
 echo'<h1>Login</h1>';
 echo'<form action="shop.php" id="formular" method="post">';
@@ -57,25 +57,18 @@ else {
 $benutzer = htmlspecialchars($_POST['username']);
 
 if($stmt = $mysqli->prepare($query)){
-   /*
-        Binds variables to prepared statement
 
-        i    corresponding variable has type integer
-        d    corresponding variable has type double
-        s    corresponding variable has type string
-        b    corresponding variable is a blob and will be sent in packets
-   */
    $stmt->bind_param('s',$benutzer);
 
-   /* execute query */
+
    $stmt->execute();
 
-   /* Store the result (to get properties) */
+
    $stmt->store_result();
 
 
 
-   /* Bind the result to variables */
+
    $stmt->bind_result($passwort2);
 
    while ($stmt->fetch()) {
@@ -83,10 +76,10 @@ if($stmt = $mysqli->prepare($query)){
 
    }
 
-   /* free results */
+
    $stmt->free_result();
 
-   /* close statement */
+
    $stmt->close();
 }
 
