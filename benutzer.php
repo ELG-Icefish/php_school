@@ -37,7 +37,7 @@
       if ((!empty($_POST["username"]))||(!empty($_POST["password"]))) {
         echo "Sie werden zur Login-Seite weitergeletet. Melden sie sich dort mit dem von Ihnen erstellten Konto an.";
         sleep(3);
-        header('location: http://localhost/onlineshop/projekt_ikt.php');
+        header('location: projekt_ikt.php');
       }
 ?>
 

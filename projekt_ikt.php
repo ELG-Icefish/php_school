@@ -88,7 +88,7 @@ if ("$passwort1"=="$passwort2") {
   echo "erfolgreich";
 $cookie = "user";
 setcookie($cookie, $benutzer, "/");
-header('location: http://localhost/onlineshop/shop.php');
+header('location: shop.php');
 exit(1);
 }
 else {
