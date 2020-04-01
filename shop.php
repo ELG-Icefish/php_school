@@ -1,14 +1,13 @@
 <?php
-$cookie = "user";
-echo $_COOKIE[$cookie];
-echo  "<html>";
-  echo  "<head>";
-  echo  "</head>";
+
+echo  '<html>';
+  echo  '<head>';
+  echo  '</head>';
 
   echo    "<body>";
-  echo    "<iframe src='https://www.orf.at' height='100' width='100%'' style='border:none'></iframe>";
-  echo    "<iframe src='https://www.derstandard.at' height='100%' width='10%' style='border:none' align=left></iframe>";
-  echo    "<iframe src='benutzer.php' height='100%' width='90%' style='border:none'align=right></iframe>";
-  echo   "</body>";
-  echo   "</html>";
+  echo    '<iframe src="top.php" height="10%" width="100%" style="border:1px solid black"></iframe>';
+  echo    '<iframe src="nav.php" height="100%" width="9%" style="border:1px solid black" align=right></iframe>';
+  echo    '<iframe src="leer.html" name="main" height="95%" width="90%" style="border:none" align=left></iframe>';
+  echo   '</body>';
+  echo   '</html>';
 ?>
