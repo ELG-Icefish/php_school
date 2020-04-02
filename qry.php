@@ -12,7 +12,7 @@ function plus($benutzer, $produkt) {
 
 if($stmt = $mysqli->prepare($query)){
 
-   $stmt->bind_param('ss',$produkt, $benutzer);
+   $stmt->bind_param('ss', $produkt, $benutzer);
 
 
    $stmt->execute();
