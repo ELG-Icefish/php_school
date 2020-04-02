@@ -5,7 +5,14 @@
 </head>
 <body>
 
-<h1>Kategorie 1</h1><br>
+<h1>Lebensmittel</h1><br>
+<table>
+  <tr>
+    <td><img src="bilder/karotte.jpg" alt="Karotte" width="200" height="200"><img</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 
 </body>
 </html>

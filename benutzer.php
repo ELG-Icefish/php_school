@@ -33,7 +33,14 @@
     $stmt->bind_param("ss", $benutzer, $passwort);
     $stmt->execute();
     $stmt->close();
-  }
+      }
+    $sql2 = "INSERT INTO einkauf (e_benutzer) VALUES (?)";
+    if ($stmt = $mysqli->prepare($sql2)) {
+    $stmt->bind_param("s", $benutzer);
+    $stmt->execute();
+    $stmt->close();
+      }
+
       if ((!empty($_POST["username"]))||(!empty($_POST["password"]))) {
         echo "Sie werden zur Login-Seite weitergeletet. Melden sie sich dort mit dem von Ihnen erstellten Konto an.";
         sleep(3);
