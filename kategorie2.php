@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <html>
 <head>
+  <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
 </head>
 <body>
 
