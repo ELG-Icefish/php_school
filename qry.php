@@ -8,11 +8,18 @@ function plus($benutzer, $produkt) {
   else {
   //echo "Verbunden<br>";
   }
+
+/*  $query = 'SELECT e_p1 FROM einkauf WHERE e_benutzer = ?';
+
+if($stmt = $mysqli->prepare($query)){
+
+   $stmt->bind_param('s',$benutzer); */
+
   $query = 'SELECT ? FROM einkauf WHERE e_benutzer = ?';
 
 if($stmt = $mysqli->prepare($query)){
 
-   $stmt->bind_param('ss', $produkt, $benutzer);
+   $stmt->bind_param("ss", $produkt, $benutzer);
 
 
    $stmt->execute();
@@ -35,19 +42,23 @@ if($stmt = $mysqli->prepare($query)){
 
 
    $stmt->close();
-echo "$zahl";
+
+   echo "$zahl";
+   }
+/*
 $zahl=$zahl+1;
 $update="UPDATE `einkauf` SET ? = ? WHERE `einkauf`.`e_benutzer` = ?";
 if($stmt = $mysqli->prepare($update)){
 
-   $stmt->bind_param("sis",$produkt, $e_p1, $benutzer);
+   $stmt->bind_param("sis",$produkt, $zahl, $benutzer);
 
 
    $stmt->execute();
 }
 }
+*/
 }
-function minus($benutzer, $produkt) {
+function minus($benutzer, $produkt) {/*
   $mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();
@@ -56,6 +67,7 @@ function minus($benutzer, $produkt) {
   else {
   //echo "Verbunden<br>";
   }
+
   $query = 'SELECT ? FROM einkauf WHERE e_benutzer = ?';
 
 if($stmt = $mysqli->prepare($query)){
@@ -92,12 +104,13 @@ $e_p1=$e_p1-1;
 $update="UPDATE `einkauf` SET ? = ? WHERE `einkauf`.`e_benutzer` = ?";
 if($stmt = $mysqli->prepare($update)){
 
-   $stmt->bind_param("sis",$produkt, $e_p1, $benutzer);
+   $stmt->bind_param("sis",$produkt, $zahl, $benutzer);
 
 
    $stmt->execute();
 }
 }
 }
+*/
 }
 ?>
