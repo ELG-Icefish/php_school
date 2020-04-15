@@ -3,14 +3,15 @@
 <html>
 <head>
   <?php
-  $mysqli = new mysqli('localhost','root','','shop');
+  include 'wk_qry.php';
+  /*$mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();
   exit();
   }
   else {
   //echo "Verbunden<br>";
-  }
+}*/
   $cookie = "user";
   $benutzer = $_COOKIE[$cookie];
   ?>
@@ -23,7 +24,11 @@
   <tr><td>Produkt:</td><td>Anzahl:</td></tr>
   <tr><td> </td><td> </td></tr>
 <?php
+$produkt="e_p1";
+
+  qry($benutzer, $produkt);
 //Produkt 1
+/*
 $query = 'SELECT e_p1 FROM einkauf WHERE e_benutzer = ?';
 
 if($stmt = $mysqli->prepare($query)){
@@ -300,7 +305,7 @@ echo "</td>";
 echo "</tr>";
 }
 
-?>
+*/?>
 </table>
 
 </body>

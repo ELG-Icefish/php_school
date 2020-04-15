@@ -1,5 +1,7 @@
 <?php
-function plus($benutzer, $produkt) {
+function qry($benutzer, $produkt) {
+  echo "$benutzer";
+  echo "$produkt";
   $mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();
@@ -9,42 +11,25 @@ function plus($benutzer, $produkt) {
   //echo "Verbunden<br>";
   }
   $query = 'SELECT ? FROM einkauf WHERE e_benutzer = ?';
-
 if($stmt = $mysqli->prepare($query)){
-
    $stmt->bind_param('ss', $produkt, $benutzer);
-
-
    $stmt->execute();
-
-
    $stmt->store_result();
-
-
-
-
-   $stmt->bind_result($zahl);
-
+   $stmt->bind_result($e_p1);
    while ($stmt->fetch()) {
-
-
    }
-
-
    $stmt->free_result();
-
-
    $stmt->close();
-echo "$zahl";
-$zahl=$zahl+1;
-$update="UPDATE `einkauf` SET ? = ? WHERE `einkauf`.`e_benutzer` = ?";
-if($stmt = $mysqli->prepare($update)){
-
-   $stmt->bind_param("sis",$produkt, $e_p1, $benutzer);
-
-
-   $stmt->execute();
-}
+   }
+   if ($e_p1>0) {
+   echo "<tr>";
+   echo "<td>";
+   echo "Karotte";
+   echo "</td>";
+   echo "<td>";
+   echo "$e_p1";
+   echo "</td>";
+   echo "</tr>";
 }
 }
 ?>
