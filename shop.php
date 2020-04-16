@@ -1,13 +1,25 @@
-<?php
 
-echo  '<html>';
-  echo  '<head>';
-  echo  '</head>';
 
-  echo    "<body>";
-  echo    '<iframe src="top.php" height="27%" width="100%" style="border:none"></iframe>';
-  echo    '<iframe src="nav.php" height="100%" width="10%"  style="border:none" align=right></iframe>';
-  echo    '<iframe src="kategorie1.php" name="main" height="100%" width="90%" style="border:none" align=left></iframe>';
-  echo   '</body>';
-  echo   '</html>';
-?>
+<html>
+<head>
+<link rel="stylesheet" href="onlineshop.css">
+</head>
+<body>
+<ul>
+<li><a href="leer.html"  target="main">Home</a></li>
+<li><a href="warenkorb.php"  target="main">Warenkorb</a></li>
+<li class="dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Kategorien</a>
+  <div class="dropdown-content">
+    <a href="kategorie1.php" target="main">Obst und Gemüse</a>
+    <a href="kategorie2.php" target="main">Gebäck</a>
+    <a href="kategorie3.php" target="main">Kategorie3</a>
+    <a href="kategorie4.php" target="main">Kategorie4</a>
+  </div>
+</li>
+</ul>
+
+
+<iframe src="leer.php" name="main" height="100%" width="100%" style="border:none" align=left></iframe>
+</body>
+</html>
