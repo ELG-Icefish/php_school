@@ -5,7 +5,7 @@
   <?php
  $benutzer=1;
    $cookie = "user"; $benutzer=$_COOKIE[$cookie];
-   
+
 
   include 'qry.php'; ?>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
@@ -17,7 +17,7 @@
   <tr>
     <td>
       <img src="bilder/brot.png" alt="Brot" width="200" height="200">
-      <p>Karotte<p>
+      <p>Brot<p>
         <br>
       <p>
         <table>
@@ -34,12 +34,84 @@
           </tr>
      </table>
       <?php
-        $produkt="e_p3";
+        $produkt="e_p4";
         if(isset($_POST['plus'])){
           plus($benutzer, $produkt);
         }
 
         if(isset($_POST['minus'])){
+          minus($benutzer, $produkt);
+        }
+         ?>
+
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="bilder/placeholder.png" alt="placeholder" width="200" height="200">
+      <p>produkt5<p>
+        <br>
+      <p>
+        <table>
+          <tr>
+            <td>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
+      	   <input type="submit" value="+" name="plus2">
+           </form>
+         </td>
+            <td>
+             <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
+         	   <input type="submit" value="-" name="minus2">
+              </form></td>
+          </tr>
+     </table>
+      <?php
+        $produkt="e_p5";
+        if(isset($_POST['plus2'])){
+          plus($benutzer, $produkt);
+        }
+
+        if(isset($_POST['minus2'])){
+          minus($benutzer, $produkt);
+        }
+         ?>
+
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="bilder/placeholder.png" alt="placeholder" width="200" height="200">
+      <p>produkt6<p>
+        <br>
+      <p>
+        <table>
+          <tr>
+            <td>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
+      	   <input type="submit" value="+" name="plus3">
+           </form>
+         </td>
+            <td>
+             <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
+         	   <input type="submit" value="-" name="minus3">
+              </form></td>
+          </tr>
+     </table>
+      <?php
+        $produkt="e_p6";
+        if(isset($_POST['plus3'])){
+          plus($benutzer, $produkt);
+        }
+
+        if(isset($_POST['minus3'])){
           minus($benutzer, $produkt);
         }
          ?>

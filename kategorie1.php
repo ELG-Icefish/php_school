@@ -5,7 +5,7 @@
   <?php
  $benutzer=1;
    $cookie = "user"; $benutzer=$_COOKIE[$cookie];
-   
+
 
   include 'qry.php'; ?>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
@@ -79,6 +79,42 @@
          minus($benutzer, $produkt);
        }
         ?>
+  </tr>
+  <tr>
+    <td>
+      <img src="bilder/placeholder.png" alt="placeholder" width="200" height="200">
+      <p>produkt3<p>
+        <br>
+      <p>
+        <table>
+          <tr>
+            <td>
+            <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
+      	   <input type="submit" value="+" name="plus3">
+           </form>
+         </td>
+            <td>
+             <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
+         	   <input type="submit" value="-" name="minus3">
+              </form></td>
+          </tr>
+     </table>
+      <?php
+        $produkt="e_p3";
+        if(isset($_POST['plus3'])){
+          plus($benutzer, $produkt);
+        }
+
+        if(isset($_POST['minus3'])){
+          minus($benutzer, $produkt);
+        }
+         ?>
+
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
   </tr>
 </table>
 
