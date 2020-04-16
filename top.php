@@ -19,8 +19,8 @@
       <a href="kategorie4.php" target="main">Kategorie4</a>
     </div>
   </li>
-  <li class="right"><?php $cookie = "user"; echo $_COOKIE[$cookie]; ?></li>
-</ul>
+
+  </ul>
 
 
 </p>
