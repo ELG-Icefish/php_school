@@ -5,9 +5,10 @@
 <link rel="stylesheet" href="onlineshop.css">
 </head>
 <body>
-  <p class="black">
+
 <ul>
-<li><a href="leer.html"  target="main">Home</a></li>
+
+<li><a href="home.php"  target="main">Home</a></li>
 <li><a href="warenkorb.php"  target="main">Warenkorb</a></li>
 <li class="dropdown">
   <a href="javascript:void(0)" class="dropbtn">Kategorien</a>
@@ -18,7 +19,8 @@
     <a href="kategorie4.php" target="main">Kategorie4</a>
   </div>
 </li>
-<li></li>
+<li class="right"><a href="abmelden.php">Abmelden</a></li>
+
 </ul>
 </p>
 
