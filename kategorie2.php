@@ -2,16 +2,12 @@
 <meta charset="UTF-8">
 <html>
 <head>
-  <?php $benutzer=1;
+  <?php
+ $benutzer=1;
    $cookie = "user"; $benutzer=$_COOKIE[$cookie];
-  $mysqli = new mysqli('localhost','root','','shop');
-  if ($mysqli->connect_error) {
-  echo "Fehler bei der Verbindung:". msqli_connect_error();
-  exit();
-  }
-  else {
-  //echo "Verbunden<br>";
-  } ?>
+   
+
+  include 'qry.php'; ?>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
 </head>
 <body>
@@ -21,110 +17,35 @@
   <tr>
     <td>
       <img src="bilder/brot.png" alt="Brot" width="200" height="200">
-      <p>Brot<p>
+      <p>Karotte<p>
         <br>
       <p>
         <table>
           <tr>
             <td>
             <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
-      	   <input type="submit" value="+" name="plus1">
+      	   <input type="submit" value="+" name="plus">
            </form>
          </td>
             <td>
              <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
-         	   <input type="submit" value="-" name="minus1">
+         	   <input type="submit" value="-" name="minus">
               </form></td>
           </tr>
      </table>
       <?php
-        if(isset($_POST['plus1'])){
-          $query = 'SELECT e_p3 FROM einkauf WHERE e_benutzer = ?';
-
-        if($stmt = $mysqli->prepare($query)){
-
-           $stmt->bind_param('s',$benutzer);
-
-
-           $stmt->execute();
-
-
-           $stmt->store_result();
-
-
-
-
-           $stmt->bind_result($e_p1);
-
-           while ($stmt->fetch()) {
-
-
-           }
-
-
-           $stmt->free_result();
-
-
-           $stmt->close();
-        $e_p1=$e_p1+1;
-        echo "$e_p1";
-        $update="UPDATE `einkauf` SET `e_p3` = ? WHERE `einkauf`.`e_benutzer` = ?";
-        if($stmt = $mysqli->prepare($update)){
-
-           $stmt->bind_param("is", $e_p1, $benutzer);
-
-
-           $stmt->execute();
+        $produkt="e_p3";
+        if(isset($_POST['plus'])){
+          plus($benutzer, $produkt);
         }
-        }
-        }
-        if(isset($_POST['minus1'])){
-          $query = 'SELECT e_p3 FROM einkauf WHERE e_benutzer = ?';
 
-        if($stmt = $mysqli->prepare($query)){
-
-           $stmt->bind_param('s',$benutzer);
-
-
-           $stmt->execute();
-
-
-           $stmt->store_result();
-
-
-
-
-           $stmt->bind_result($e_p1);
-
-           while ($stmt->fetch()) {
-
-
-           }
-
-
-           $stmt->free_result();
-
-
-           $stmt->close();
-
-        if ($e_p1>0) {
-
-
-        $e_p1=$e_p1-1;
-        echo "$e_p1";
-        $update="UPDATE `einkauf` SET `e_p3` = ? WHERE `einkauf`.`e_benutzer` = ?";
-        if($stmt = $mysqli->prepare($update)){
-
-           $stmt->bind_param("is", $e_p1, $benutzer);
-
-
-           $stmt->execute();
-        }
-        }
-        }
+        if(isset($_POST['minus'])){
+          minus($benutzer, $produkt);
         }
          ?>
 
+    </td>
+    <td>
     </td>
     <td>
     </td>

@@ -25,8 +25,29 @@
   <tr><td> </td><td> </td></tr>
 <?php
 $produkt="e_p1";
-
-  qry($benutzer, $produkt);
+qry($benutzer, $produkt);
+$produkt="e_p2";
+qry($benutzer, $produkt);
+$produkt="e_p3";
+qry($benutzer, $produkt);
+$produkt="e_p4";
+qry($benutzer, $produkt);
+$produkt="e_p5";
+qry($benutzer, $produkt);
+$produkt="e_p6";
+qry($benutzer, $produkt);
+$produkt="e_p7";
+qry($benutzer, $produkt);
+$produkt="e_p8";
+qry($benutzer, $produkt);
+$produkt="e_p9";
+qry($benutzer, $produkt);
+$produkt="e_p10";
+qry($benutzer, $produkt);
+$produkt="e_p11";
+qry($benutzer, $produkt);
+$produkt="e_p12";
+qry($benutzer, $produkt);
 //Produkt 1
 /*
 $query = 'SELECT e_p1 FROM einkauf WHERE e_benutzer = ?';

@@ -1,7 +1,5 @@
 <?php
 function qry($benutzer, $produkt) {
-  echo "$benutzer";
-  echo "$produkt";
   $mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();
@@ -10,9 +8,9 @@ function qry($benutzer, $produkt) {
   else {
   //echo "Verbunden<br>";
   }
-  $query = 'SELECT ? FROM einkauf WHERE e_benutzer = ?';
+  $query = "SELECT $produkt FROM einkauf WHERE e_benutzer = ?";
 if($stmt = $mysqli->prepare($query)){
-   $stmt->bind_param('ss', $produkt, $benutzer);
+   $stmt->bind_param('s', $benutzer);
    $stmt->execute();
    $stmt->store_result();
    $stmt->bind_result($e_p1);
@@ -21,10 +19,21 @@ if($stmt = $mysqli->prepare($query)){
    $stmt->free_result();
    $stmt->close();
    }
+   $query2 = "SELECT p_long FROM produkte WHERE p_short = ?";
+ if($stmt = $mysqli->prepare($query2)){
+    $stmt->bind_param('s', $produkt);
+    $stmt->execute();
+    $stmt->store_result();
+    $stmt->bind_result($p_name);
+    while ($stmt->fetch()) {
+    }
+    $stmt->free_result();
+    $stmt->close();
+    }
    if ($e_p1>0) {
    echo "<tr>";
    echo "<td>";
-   echo "Karotte";
+   echo "$p_name";
    echo "</td>";
    echo "<td>";
    echo "$e_p1";
