@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <html>
 <head>
+  <link rel="stylesheet" href="onlineshop.css">
   <?php
  $benutzer=1;
    $cookie = "user"; $benutzer=$_COOKIE[$cookie];

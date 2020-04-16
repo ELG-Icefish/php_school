@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
+<link rel="stylesheet" href="onlineshop.css">
 <head>
   <?php
   include 'wk_qry.php';

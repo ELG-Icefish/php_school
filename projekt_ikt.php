@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="onlineshop.css">
   <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
   <meta charset=\"utf-8\">
   <title>Online Shop</title>
