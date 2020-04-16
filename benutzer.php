@@ -1,8 +1,9 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="onlineshop.css">
   <meta charset=\"utf-8\">
+  <link rel="stylesheet" href="onlineshop.css">
   <title>Online Shop</title>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
   <?php
@@ -26,23 +27,28 @@
 
 		<input type="submit">
     </form>
-    <div class="fehler">
 <?php
-    $benutzer = htmlspecialchars($_POST['username']);
-    $passwort = htmlspecialchars($_POST['password']);
-    $sql = "INSERT INTO benutzer (b_username, b_password) VALUES (?, ?)";
-    if ($stmt = $mysqli->prepare($sql)) {
-    $stmt->bind_param("ss", $benutzer, $passwort);
-    $stmt->execute();
-    $stmt->close();
-  }
       if ((!empty($_POST["username"]))||(!empty($_POST["password"]))) {
+        $benutzer = htmlspecialchars($_POST['username']);
+        $passwort = htmlspecialchars($_POST['password']);
+        $sql = "INSERT INTO benutzer (b_username, b_password) VALUES (?, ?)";
+        if ($stmt = $mysqli->prepare($sql)) {
+        $stmt->bind_param("ss", $benutzer, $passwort);
+        $stmt->execute();
+        $stmt->close();
+          }
+        $sql2 = "INSERT INTO einkauf (e_benutzer) VALUES (?)";
+        if ($stmt = $mysqli->prepare($sql2)) {
+        $stmt->bind_param("s", $benutzer);
+        $stmt->execute();
+        $stmt->close();
+          }
         echo "Sie werden zur Login-Seite weitergeletet. Melden sie sich dort mit dem von Ihnen erstellten Konto an.";
         sleep(3);
         header('location: projekt_ikt.php');
       }
 ?>
-</div>
+
 
 
 </body>
