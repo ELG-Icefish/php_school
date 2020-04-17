@@ -5,7 +5,14 @@
 <link rel="stylesheet" href="onlineshop.css">
 </head>
 <body>
-
+<?php
+$cookie = "user";
+if(isset($_COOKIE[$cookie])) {}
+  else {
+    header('location: projekt_ikt.php');
+ exit(1);
+  }
+?>
 <ul>
 
 <li><a href="home.php"  target="main">Home</a></li>
@@ -19,7 +26,14 @@
     <a href="kategorie4.php" target="main">Kategorie4</a>
   </div>
 </li>
-<li class="right"><a href="abmelden.php">Abmelden</a></li>
+<li class="right dropdown">
+  <a href="javascript:void(0)" class="dropbtn">Account</a>
+  <div class="dropdown-content">
+    <a href="abmelden.php" target="_parent">Abmelden</a>
+    <a href="abmelden.php" target="_parent">Abmelden</a>
+  </div>
+  
+</li>
 
 </ul>
 </p>

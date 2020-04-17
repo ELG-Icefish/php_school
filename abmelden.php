@@ -9,7 +9,6 @@
     <?php
     $cookie = "user";
     if(isset($_COOKIE[$cookie])) {
-      echo "Sie sind als $_COOKIE[$cookie] angemeldet";
       echo "<br>";
       echo '<a href="shop.php">Zurück zum Shop</a>';
       echo "<br>";
@@ -24,6 +23,10 @@
          header('location: projekt_ikt.php');
      exit(1);
    }
+ }
+ else {
+   header('location: projekt_ikt.php');
+exit(1);
  }
    ?>
   </body>
