@@ -30,9 +30,9 @@ if(isset($_COOKIE[$cookie])) {}
   <a href="javascript:void(0)" class="dropbtn">Account</a>
   <div class="dropdown-content">
     <a href="abmelden.php" target="_parent">Abmelden</a>
-    <a href="abmelden.php" target="_parent">Abmelden</a>
+    <a href="loeschen.php" target="_parent">Account löschen</a>
   </div>
-  
+
 </li>
 
 </ul>

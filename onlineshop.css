@@ -1,3 +1,4 @@
+
 body {
 background-color: lightblue;
 }
@@ -94,6 +95,7 @@ form {
 }
 .right {
   float: right;
+  width: 9%;
 }
 
 
