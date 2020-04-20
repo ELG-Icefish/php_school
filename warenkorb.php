@@ -2,6 +2,7 @@
 <meta charset="UTF-8">
 <html>
 <link rel="stylesheet" href="onlineshop.css">
+<form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
 <head>
   <?php
   include 'wk_qry.php';
@@ -51,6 +52,14 @@ $produkt="e_p12";
 qry($benutzer, $produkt);
 ?>
 </table>
-
+<br>
+<form method="post" action="script.php">
+ <input type="submit" value="Warenkorb leeren" name="sent">
+ </form>
+<?php
+ if(isset($_POST['sent'])){
+   clear($benutzer);
+ }
+?>
 </body>
 </html>

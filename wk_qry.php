@@ -41,4 +41,28 @@ if($stmt = $mysqli->prepare($query)){
    echo "</tr>";
 }
 }
+function clear($benutzer) {
+  $mysqli = new mysqli('localhost','root','','shop');
+  if ($mysqli->connect_error) {
+  echo "Fehler bei der Verbindung:". msqli_connect_error();
+  exit();
+  }
+  else {
+  //echo "Verbunden<br>";
+  }
+  for ($x = 1; $x < 13; $x++) {
+      $produkt= "e_p".$x;
+
+
+$update="UPDATE `einkauf` SET $produkt = 0 WHERE `einkauf`.`e_benutzer` = ?";
+if($stmt = $mysqli->prepare($update)){
+
+   $stmt->bind_param("s", $benutzer);
+
+
+   $stmt->execute();
+}
+}
+header('location:'.$_SERVER['PHP_SELF']);
+}
 ?>
