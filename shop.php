@@ -15,7 +15,7 @@ if(isset($_COOKIE[$cookie])) {}
 ?>
 <ul>
 
-<li><a href="home.php"  target="main">Home</a></li>
+<li><a href="start.php"  target="main">Home</a></li>
 <li><a href="warenkorb.php"  target="main">Warenkorb</a></li>
 <li class="dropdown">
   <a href="javascript:void(0)" class="dropbtn">Kategorien</a>
@@ -39,6 +39,6 @@ if(isset($_COOKIE[$cookie])) {}
 </p>
 
 <iframe src="leer.html" name="top" height="5%" width="100%" style="border:none" align=top></iframe>
-<iframe src="home.php" name="main" height="95%" width="100%" style="border:none" align=left></iframe>
+<iframe src="start.php" name="main" height="95%" width="100%" style="border:none" align=left></iframe>
 </body>
 </html>

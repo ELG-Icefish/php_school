@@ -20,6 +20,7 @@
        $cookie_user= $_COOKIE[$cookie];
        if(isset($_POST['sent'])){
          setcookie ($cookie, "$cookie_user", time() -1);
+         setcookie ($cookie_user, "0", time() -1);
          header('location: projekt_ikt.php');
      exit(1);
    }
