@@ -45,9 +45,10 @@ if($stmt = $mysqli->prepare($query)){
 
 
    }
-   echo "$zahl";
+
 
 $zahl=$zahl+1;
+echo "$zahl";
 $update="UPDATE `einkauf` SET $produkt = ? WHERE `einkauf`.`e_benutzer` = ?";
 if($stmt = $mysqli->prepare($update)){
 
@@ -105,11 +106,12 @@ if($stmt = $mysqli->prepare($query)){
 
 
    }
-   echo "$zahl";
+
 
 $zahl=$zahl-1;
 if ($zahl>0) {
-  
+  echo "$zahl";
+
 
 $update="UPDATE `einkauf` SET $produkt = ? WHERE `einkauf`.`e_benutzer` = ?";
 if($stmt = $mysqli->prepare($update)){
@@ -119,6 +121,9 @@ if($stmt = $mysqli->prepare($update)){
 
    $stmt->execute();
 }
+}
+else {
+  echo "$zahl";
 }
 }
 

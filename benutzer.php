@@ -43,9 +43,10 @@
         $stmt->execute();
         $stmt->close();
           }
-        echo "Sie werden zur Login-Seite weitergeletet. Melden sie sich dort mit dem von Ihnen erstellten Konto an.";
+          $cookie = "user";
+          setcookie($cookie, $benutzer, "/");
         sleep(3);
-        header('location: projekt_ikt.php');
+        header('location: Shop.php');
       }
 ?>
 

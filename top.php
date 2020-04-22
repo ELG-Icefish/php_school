@@ -3,24 +3,25 @@
 <html>
 <link rel="stylesheet" href="onlineshop.css">
 <head>
-  <style>
-  .button {
-    background-color: #red; /* Green */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-  }
-  </style>
 </head>
 <body>
 
-  <h2>Sie sind angemeldet als: <?php $cookie = "user"; echo $_COOKIE[$cookie]; ?> </h2>
-  <h1>  Onlineshop </h1>
-  <button class="button"><a href="warenkorb.php"  target="main">Warenkorb</a></button>
+
+  <ul>
+  <li><a href="leer.html"  target="main">Home</a></li>
+  <li><a href="warenkorb.php"  target="main">Warenkorb</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kategorien</a>
+    <div class="dropdown-content">
+      <a href="kategorie1.php" target="main">Obst und Gemüse</a>
+      <a href="kategorie2.php" target="main">Gebäck</a>
+      <a href="kategorie3.php" target="main">Kategorie3</a>
+      <a href="kategorie4.php" target="main">Kategorie4</a>
+    </div>
+  </li>
+
+  </ul>
+
 
 </p>
 </body>
