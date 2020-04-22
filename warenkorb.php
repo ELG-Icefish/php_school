@@ -30,8 +30,9 @@
 <?php
 qry($benutzer);
 ?>
-</table>
-<br>
+
+<tr>
+  <td>
 <form method="post" action="script.php">
  <input type="submit" value="Warenkorb leeren" name="sent">
  </form>
@@ -40,5 +41,12 @@ qry($benutzer);
    clear($benutzer);
  }
 ?>
+</td>
+<td>
+</td>
+<td>
+</td>
+</tr>
+</table>
 </body>
 </html>

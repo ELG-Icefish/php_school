@@ -94,6 +94,9 @@ exit(1);
 }
 else {
   echo "Passwort falsch";
+  sleep(3);
+  header('location:'.$_SERVER['PHP_SELF']);
+  exit(1);
 }
 
 }
