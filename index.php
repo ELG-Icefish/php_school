@@ -20,7 +20,8 @@
      $cookie_user= $_COOKIE[$cookie];
      if(isset($_POST['sent'])){
        setcookie ($cookie, "$cookie_user", time() -1);
-       echo'Bitte neu laden!';
+       header('location:'.$_SERVER['PHP_SELF']);
+       exit(1);
  }
 
 
