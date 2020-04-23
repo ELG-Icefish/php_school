@@ -45,7 +45,7 @@
           }
           $cookie = "user";
           setcookie($cookie, $benutzer, "/");
-        sleep(3);
+          sleep(3);
         header('location: ../index.php');
       }
 ?>
