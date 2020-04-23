@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+../bilder<!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
 <head>
@@ -8,7 +8,7 @@
    $cookie = "user"; $benutzer=$_COOKIE[$cookie];
 
 
-  include 'qry.php'; ?>
+  include '../qry/kat_qry.php'; ?>
   <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
 </head>
 <body>
@@ -17,7 +17,7 @@
 <table>
   <tr>
     <td>
-      <img src="bilder/placeholder.png" alt="placeholder" width="200" height="200">
+      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
       <p>produkt7<p>
         <br>
       <p>
@@ -53,7 +53,7 @@
   </tr>
   <tr>
     <td>
-      <img src="bilder/placeholder.png" alt="placeholder" width="200" height="200">
+      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
       <p>produkt8<p>
         <br>
       <p>
@@ -89,7 +89,7 @@
   </tr>
   <tr>
     <td>
-      <img src="bilder/placeholder.png" alt="placeholder" width="200" height="200">
+      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
       <p>produkt9<p>
         <br>
       <p>

@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
-<link rel="stylesheet" href="onlineshop.css">
+<link rel="stylesheet" href="../onlineshop.css">
 <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
 <head>
   <?php
-  include 'wk_qry.php';
+  include '../qry/wk_qry.php';
   /*$mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();

@@ -2,7 +2,7 @@
 <meta charset="UTF-8">
 <html>
 <head>
-  <link rel="stylesheet" href="onlineshop.css">
+  <link rel="stylesheet" href="../onlineshop.css">
 </head>
 <body>
 <h2>Willkommen</h2>

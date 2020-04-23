@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="onlineshop.css">
+    <link rel="stylesheet" href="../onlineshop.css">
     <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
     <meta charset="utf-8" />
   </head>
@@ -10,7 +10,7 @@
     $cookie = "user";
     if(isset($_COOKIE[$cookie])) {
       echo "<br>";
-      echo '<a href="shop.php">Zurück zum Shop</a>';
+      echo '<a href="../shop/shop.php">Zurück zum Shop</a>';
       echo "<br>";
       echo'Benutzer wechseln:<br>';
       echo '
@@ -21,12 +21,12 @@
        if(isset($_POST['sent'])){
          setcookie ($cookie, "$cookie_user", time() -1);
          setcookie ($cookie_user, "0", time() -1);
-         header('location: projekt_ikt.php');
+         header('location: ../index.php');
      exit(1);
    }
  }
  else {
-   header('location: projekt_ikt.php');
+   header('location: ../index.php');
 exit(1);
  }
    ?>
