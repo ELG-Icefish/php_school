@@ -1,5 +1,5 @@
 <?php
-function plus($benutzer, $produkt) {
+function plus($benutzer, $produkt) { //Erstellt Funktion
   $mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();
@@ -9,13 +9,7 @@ function plus($benutzer, $produkt) {
   //echo "Verbunden<br>";
   }
 
-/*  $query = 'SELECT e_p1 FROM einkauf WHERE e_benutzer = ?';
-
-if($stmt = $mysqli->prepare($query)){
-
-   $stmt->bind_param('s',$benutzer); */
-
-  $query = "SELECT $produkt FROM einkauf WHERE e_benutzer = ?";
+ $query = "SELECT $produkt FROM einkauf WHERE e_benutzer = ?"; //Liest aus der Tablelle einen Wert aus
 
 if($stmt = $mysqli->prepare($query)){
 
@@ -30,7 +24,7 @@ if($stmt = $mysqli->prepare($query)){
 
 
 
-   $stmt->bind_result($zahl);
+   $stmt->bind_result($zahl); //Belegt die Variable $zahl mit dem Ergebniss der Abfrage
 
    while ($stmt->fetch()) {
 
@@ -49,7 +43,7 @@ if($stmt = $mysqli->prepare($query)){
 
 $zahl=$zahl+1;
 echo "$zahl";
-$update="UPDATE `einkauf` SET $produkt = ? WHERE `einkauf`.`e_benutzer` = ?";
+$update="UPDATE `einkauf` SET $produkt = ? WHERE `einkauf`.`e_benutzer` = ?"; //Ersetzt in der Datenbank den wert durch die neue Anzahl
 if($stmt = $mysqli->prepare($update)){
 
    $stmt->bind_param("is", $zahl, $benutzer);
@@ -60,7 +54,7 @@ if($stmt = $mysqli->prepare($update)){
 }
 
 
-function minus($benutzer, $produkt) {
+function minus($benutzer, $produkt) { //Selber Code wie Oben nur mit - anstatt +
   $mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();
@@ -69,12 +63,6 @@ function minus($benutzer, $produkt) {
   else {
   //echo "Verbunden<br>";
   }
-
-/*  $query = 'SELECT e_p1 FROM einkauf WHERE e_benutzer = ?';
-
-if($stmt = $mysqli->prepare($query)){
-
-   $stmt->bind_param('s',$benutzer); */
 
   $query = "SELECT $produkt FROM einkauf WHERE e_benutzer = ?";
 
@@ -109,7 +97,7 @@ if($stmt = $mysqli->prepare($query)){
 
 
 $zahl=$zahl-1;
-if ($zahl>0) {
+if ($zahl>0) { //Verhindert dass der wert auf einen negative Zahl gesetz wird
   echo "$zahl";
 
 

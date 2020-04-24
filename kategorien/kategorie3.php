@@ -9,7 +9,7 @@
 
 
   include '../qry/kat_qry.php'; ?>
-  <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">
+  <form method="post" action="<?php echo htmlspecialchars($_SERVER ['PHP_SELF']); ?>">  <!-- Formular sendet Daten ans sich selbst -->
 </head>
 <body>
 
@@ -35,8 +35,8 @@
           </tr>
      </table>
       <?php
-        $produkt="e_p7";
-        if(isset($_POST['plus'])){
+        $produkt="e_p7";//gibt an welches Produkt ausgewählt ist
+        if(isset($_POST['plus'])){ // Je nachdem ob "+" oder "-" ausgewählt wurde wird eine der beiden Funktionen ausgeführt
           plus($benutzer, $produkt);
         }
 
@@ -71,8 +71,8 @@
           </tr>
      </table>
       <?php
-        $produkt="e_p8";
-        if(isset($_POST['plus2'])){
+        $produkt="e_p8";//gibt an welches Produkt ausgewählt ist
+        if(isset($_POST['plus2'])){ // Je nachdem ob "+" oder "-" ausgewählt wurde wird eine der beiden Funktionen ausgeführt
           plus($benutzer, $produkt);
         }
 
@@ -107,8 +107,8 @@
           </tr>
      </table>
       <?php
-        $produkt="e_p9";
-        if(isset($_POST['plus3'])){
+        $produkt="e_p9";//gibt an welches Produkt ausgewählt ist
+        if(isset($_POST['plus3'])){ // Je nachdem ob "+" oder "-" ausgewählt wurde wird eine der beiden Funktionen ausgeführt
           plus($benutzer, $produkt);
         }
 

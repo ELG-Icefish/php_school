@@ -1,5 +1,5 @@
 <?php
-function qry($benutzer) {
+function qry($benutzer) { //erstellt Funktion
   $mysqli = new mysqli('localhost','root','','shop');
   if ($mysqli->connect_error) {
   echo "Fehler bei der Verbindung:". msqli_connect_error();
