@@ -43,7 +43,7 @@ if($stmt = $mysqli->prepare($query)){
      }
      $stmt->free_result();
      $stmt->close();
-   }
+     }
    if ($e_p1>0) {
      $preis=$e_p1*$p_preis/100;
    echo "<tr>";
