@@ -9,7 +9,7 @@ function qry($benutzer) {
   //echo "Verbunden<br>";
   }
   $ges = 0;
-  for ($x = 1; $x < 13; $x++) {
+  for ($x = 1; $x() < 13; $x++) {
       $produkt= "e_p".$x;
   $query = "SELECT $produkt FROM einkauf WHERE e_benutzer = ?";
 if($stmt = $mysqli->prepare($query)){
