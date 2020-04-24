@@ -42,7 +42,7 @@ if($stmt = $mysqli->prepare($query)){
      while ($stmt->fetch()) {
      }
      $stmt->free_result();
-     $stmt->close();
+     $stmt->close();a
      }
    if ($e_p1>0) {
      $preis=$e_p1*$p_preis/100;
