@@ -6,14 +6,7 @@
 <head>
   <?php
   include '../qry/wk_qry.php';
-  /*$mysqli = new mysqli('localhost','root','','shop');
-  if ($mysqli->connect_error) {
-  echo "Fehler bei der Verbindung:". msqli_connect_error();
-  exit();
-  }
-  else {
-  //echo "Verbunden<br>";
-}*/
+
 
   $cookie = "user";
   $benutzer = $_COOKIE[$cookie];
