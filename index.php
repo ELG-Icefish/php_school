@@ -17,7 +17,6 @@
     <form method="post" action="script.php">
 	   <input type="submit" name="sent">
      </form>';
-     echo '<a href="../benutzer/benutzer.php" target="main">Registrieren</a>';
      $cookie_user= $_COOKIE[$cookie];
      if(isset($_POST['sent'])){
        setcookie ($cookie, "$cookie_user", time() -1);
@@ -48,10 +47,9 @@ echo'Benutzer:<br>';
 echo'<input name="username" type="text"><br>';
 echo'Password:<br>';
 echo'<input name="password" type="text"><br>';
-
 echo'<input type="submit">';
 echo'</form>';
-echo'';
+echo '<button><a href="benutzer/benutzer.php">Registrieren</a></button>';
 }
 else {
 
