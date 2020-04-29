@@ -53,8 +53,8 @@
   </tr>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt5<p>
+      <img src="../bilder/kaisersemmel.jpg" alt="kaisersemmel" width="200" height="200">
+      <p>Kaisersemmel<p>
         <br>
       <p>
         <table>
@@ -89,8 +89,8 @@
   </tr>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt6<p>
+      <img src="../bilder/baguette.jpg" alt="Baguette" width="200" height="200">
+      <p>Baguette<p>
         <br>
       <p>
         <table>

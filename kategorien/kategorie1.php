@@ -82,8 +82,8 @@
   </tr>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt3<p>
+      <img src="../bilder/weintraube.jpg" alt="weintraube"  height="200">
+      <p>Weintraube<p>
         <br>
       <p>
         <table>

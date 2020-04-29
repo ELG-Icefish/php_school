@@ -95,7 +95,10 @@ form {
   float: right;
   width: 9%;
 }
-
+.right {
+  text-align: center;
+  
+}
 
 h2 {
   font-family: verdana;

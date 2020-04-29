@@ -22,8 +22,8 @@ if(isset($_COOKIE[$cookie])) {}
   <div class="liste-content">
     <a href="../kategorien/kategorie1.php" target="main">Obst und Gemüse</a>
     <a href="../kategorien/kategorie2.php" target="main">Gebäck</a>
-    <a href="../kategorien/kategorie3.php" target="main">Kategorie3</a>
-    <a href="../kategorien/kategorie4.php" target="main">Kategorie4</a>
+    <a href="../kategorien/kategorie3.php" target="main">Fleisch</a>
+    <a href="../kategorien/kategorie4.php" target="main">Süßigkeiten</a>
   </div>
 </li>
 <li class="right liste">

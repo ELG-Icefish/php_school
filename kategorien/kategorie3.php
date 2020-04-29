@@ -13,12 +13,12 @@
 </head>
 <body>
 
-<h1>Kategorie3</h1><br>
+<h1>Fleisch</h1><br>
 <table>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt7<p>
+      <img src="../bilder/steak.jpg" alt="Steak" width="200" height="200">
+      <p>Steak<p>
         <br>
       <p>
         <table>
@@ -53,8 +53,8 @@
   </tr>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt8<p>
+      <img src="../bilder/schwein.jpg" alt="Schweinefleisch" width="200" height="200">
+      <p>Schweinefleisch<p>
         <br>
       <p>
         <table>
@@ -89,8 +89,8 @@
   </tr>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt9<p>
+      <img src="../bilder/Huhn.jpg" alt="Hühnerkeulen" width="200" height="200">
+      <p>Hühnerkeulen<p>
         <br>
       <p>
         <table>

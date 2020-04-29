@@ -13,12 +13,12 @@
 </head>
 <body>
 
-<h1>Kategorie4</h1><br>
+<h1>Süßigkeiten</h1><br>
 <table>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt10<p>
+      <img src="../bilder/Gummi.jpg" alt="Gummibären" width="200" height="200">
+      <p>Gummibären<p>
         <br>
       <p>
         <table>
@@ -53,8 +53,8 @@
   </tr>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt11<p>
+      <img src="../bilder/Schokolade.jpg" alt="Schokolade" width="200" height="200">
+      <p>Schokolade<p>
         <br>
       <p>
         <table>
@@ -89,8 +89,8 @@
   </tr>
   <tr>
     <td>
-      <img src="../bilder/placeholder.png" alt="placeholder" width="200" height="200">
-      <p>produkt12<p>
+      <img src="../bilder/Baklava.jpg" alt="Baklava"  height="200">
+      <p>Baklava<p>
         <br>
       <p>
         <table>
