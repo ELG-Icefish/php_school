@@ -57,9 +57,7 @@ else {
 
   $query = 'SELECT b_password FROM benutzer WHERE b_username = ?';
 $benutzer = htmlspecialchars($_POST['username']);
-
 if($stmt = $mysqli->prepare($query)){
-
    $stmt->bind_param('s',$benutzer);
 
 
@@ -89,7 +87,7 @@ $passwort1 = htmlspecialchars($_POST['password']);
 if ("$passwort1"=="$passwort2") {
   echo "erfolgreich";
 $cookie = "user";
-setcookie($cookie, $benutzer, "/");
+setcookie("user", $benutzer, "/");
 header('location: shop/shop.php');
 exit(1);
 }

@@ -63,7 +63,7 @@ if($stmt = $mysqli->prepare($query)){
 }
 echo "<tr>";
 echo "<td>";
-echo "Gesammt";
+echo "Gesamt";
 echo "</td>";
 echo "<td>";
 echo "";

@@ -1,4 +1,4 @@
-../bilder<!DOCTYPE html>
+<!DOCTYPE html>
 <meta charset="UTF-8">
 <html>
 <head>
