@@ -19,9 +19,9 @@ ul {
   top: 0;
   position: fixed;
   width: 100%;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  list-style-type: none;  /* entfernt die aufzählungszeichen bei einer liste */
+  margin: 0; /* gibt position auf der seite an */
+  padding: 0; /* entfernung eines objekts von seiner rahmenlinie */
   background-color: #333;
 }
 
@@ -31,43 +31,43 @@ li {
   background-color: #333;
 }
 
-li a, .dropbtn {
-  display: inline-block;
+li a, .liste_btn {
+  display: inline-block; /* ordnet die objekte in der navigationsleiste horizontal statt vertikal an */
   color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  text-decoration: none; /* entfernt dass der text in der navigationsleiste unterstrichen ist */
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .liste:hover .liste_btn {
   background-color: red;
 }
 
-li.dropdown {
-  display: inline-block;
+li.liste {
+  display: inline-block;  /* positioniert alle elemente in einer zeile  */
 }
 
-.dropdown-content {
+.liste-content {
   display: none;
-  position: absolute;
+  position: absolute;  /* fixiert die position */
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  /* legt die schatten um ein objekt fest */
+  z-index: 1; /* andert die reihenfolge wie die Objekte übereinander gelegt werden  */
 }
 
-.dropdown-content a {
+.liste-content a {
   color: black;
-  padding: 12px 16px;
+  padding: 12px 16px;   /* entfernung eines objekts von seiner rahmenlinie reihenfolge: oben rechts unten links */
   text-decoration: none;
-  display: block;
+  display: block; /* erzeugt automatisch einen zeilenumbruch nach jedem element */
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.liste-content a:hover {background-color: #f1f1f1;}
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.liste:hover .liste-content {
+  display: block;  /* erzeugt automatisch einen zeilenumbruch nach jedem element */
 }
 
 form {
