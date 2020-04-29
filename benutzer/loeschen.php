@@ -38,7 +38,7 @@ if(isset($_POST['sent'])) { //Bei Absenden des Formulars wird Code ausgeführt
     $stmt->bind_param('s', $benutzer);
     $stmt->execute();
   }
-  setcookie ($cookie, "$benutzer", time() -1); //Cookie wird "Deaktiviert" indem das datum in die Vergangenheitgesetzt wird
+  setcookie ($cookie, "$benutzer", time() -1); //Cookie wird "Deaktiviert" indem das datum in die Vergangenheit gesetzt wird
     header('location: benutzer.php');
 exit(1);
   }

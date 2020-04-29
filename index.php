@@ -17,6 +17,7 @@
     <form method="post" action="script.php">
 	   <input type="submit" name="sent">
      </form>';
+     echo '<a href="../benutzer/benutzer.php" target="main">Registrieren</a>';
      $cookie_user= $_COOKIE[$cookie];
      if(isset($_POST['sent'])){
        setcookie ($cookie, "$cookie_user", time() -1);
@@ -50,6 +51,7 @@ echo'<input name="password" type="text"><br>';
 
 echo'<input type="submit">';
 echo'</form>';
+echo'';
 }
 else {
 
@@ -57,7 +59,9 @@ else {
 
   $query = 'SELECT b_password FROM benutzer WHERE b_username = ?';
 $benutzer = htmlspecialchars($_POST['username']);
+
 if($stmt = $mysqli->prepare($query)){
+
    $stmt->bind_param('s',$benutzer);
 
 
@@ -87,7 +91,7 @@ $passwort1 = htmlspecialchars($_POST['password']);
 if ("$passwort1"=="$passwort2") {
   echo "erfolgreich";
 $cookie = "user";
-setcookie("user", $benutzer, "/");
+setcookie($cookie, $benutzer, "/");
 header('location: shop/shop.php');
 exit(1);
 }
