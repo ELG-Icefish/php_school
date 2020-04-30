@@ -47,9 +47,9 @@ echo'Benutzer:<br>';
 echo'<input name="username" type="text"><br>';
 echo'Password:<br>';
 echo'<input name="password" type="text"><br>';
-echo'<input type="submit">';
+echo'<input type="submit" value="Anmelden">';
 echo'</form>';
-echo '<button><a href="benutzer/benutzer.php">Registrieren</a></button>';
+echo '<button class="button"><a href="benutzer/benutzer.php">Registrieren</a></button>';
 }
 else {
 
