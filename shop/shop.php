@@ -26,14 +26,19 @@ if(isset($_COOKIE[$cookie])) {}
     <a href="../kategorien/kategorie4.php" target="main">Süßigkeiten</a>
   </div>
 </li>
+
 <li class="right liste">
   <a href="javascript:void(0)" class="liste_btn">Account</a>
   <div class="liste-content">
     <a href="../index.php" target="_parent">Abmelden</a>
     <a href="../benutzer/loeschen.php" target="_parent">Account löschen</a>
   </div>
+
 </li>
 
+<li class="right liste">
+  <a href="impressum.php"  target="main">Impressum</a>
+</li>
 </ul>
 </p>
 
