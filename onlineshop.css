@@ -1,18 +1,18 @@
 
 body {
-background-color: lightblue;
+background-color: #f7f5f5;
 }
 
 h1 {
-  font-family: verdana;
+  font-family: Verdana;
   font-size: 40px;
   text-align: center;
-  color: red;
+  color: #080808;
 }
 h2 {
-  font-family: verdana;
+  font-family: Verdana;
   font-size: 30px;
-  color: red;
+  color: #080808;
 }
 
 ul {
@@ -40,7 +40,7 @@ li a, .liste_btn {
 }
 
 li a:hover, .liste:hover .liste_btn {
-  background-color: red;
+  background-color: black;
 }
 
 li.liste {
@@ -71,19 +71,17 @@ li.liste {
 }
 
 form {
-  font-family: verdana;
+  font-family: Verdana;
   font-size: 20px;
   text-align: center;
-  color: red;
+  color: #080808;
 }
 
-
-
 .Overschrift {
-  font-family: verdana;
+  font-family: Verdana;
   font-size: 40px;
   text-align: center;
-  color: red;
+  color: #080808;
 
 }
 
@@ -95,23 +93,20 @@ form {
   float: right;
   width: 9%;
 }
-
 .button {
   position:fixed;
-      top: 30%;
+      top: 31%;
       left: 47.5%;
-      
 
-}
 h2 {
-  font-family: verdana;
+  font-family: Verdana;
   font-size: 20px;
   text-align: left;
-  color: red;
+  color: black;
 }
 table {
-  font-family: verdana;
+  font-family: Verdana;
   font-size: 16px;
   text-align: left;
-  color: black;
+  color: #080808;
 }
