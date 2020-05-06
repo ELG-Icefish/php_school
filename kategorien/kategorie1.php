@@ -17,7 +17,7 @@
   <tr>
     <td>
       <img src="../bilder/karotte.jpg" alt="Karotte" width="200" height="200">
-      <p>Karotte<p>
+      <p>Karotte     1.15€<p>
         <br>
       <p>
         <table>
@@ -53,7 +53,7 @@
   <tr>
     <td>
       <img src="../bilder/apfel.jpg" alt="Apfel" width="200" height="200">
-      <p>Apfel<p>
+      <p>Apfel     0.59€<p>
         <br>
       <p>
         <table>
@@ -83,7 +83,7 @@
   <tr>
     <td>
       <img src="../bilder/weintraube.jpg" alt="weintraube"  height="200">
-      <p>Weintraube<p>
+      <p>Weintraube     0.99€<p>
         <br>
       <p>
         <table>

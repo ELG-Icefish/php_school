@@ -97,7 +97,7 @@ if($stmt = $mysqli->prepare($query)){
 
 
 $zahl=$zahl-1;
-if ($zahl>0) { //Verhindert dass der wert auf einen negative Zahl gesetz wird
+if ($zahl>=0) { //Verhindert dass der wert auf einen negative Zahl gesetz wird
   echo "$zahl";
 
 
@@ -111,6 +111,7 @@ if($stmt = $mysqli->prepare($update)){
 }
 }
 else {
+  $zahl=0;
   echo "$zahl";
 }
 }

@@ -18,7 +18,7 @@
   <tr>
     <td>
       <img src="../bilder/steak.jpg" alt="Steak" width="200" height="200">
-      <p>Steak<p>
+      <p>Steak     5.60€<p>
         <br>
       <p>
         <table>
@@ -54,7 +54,7 @@
   <tr>
     <td>
       <img src="../bilder/schwein.jpg" alt="Schweinefleisch" width="200" height="200">
-      <p>Schweinefleisch<p>
+      <p>Schweinefleisch     3.40€<p>
         <br>
       <p>
         <table>
@@ -90,7 +90,7 @@
   <tr>
     <td>
       <img src="../bilder/Huhn.jpg" alt="Hühnerkeulen" width="200" height="200">
-      <p>Hühnerkeulen<p>
+      <p>Hühnerkeulen     4.50€<p>
         <br>
       <p>
         <table>

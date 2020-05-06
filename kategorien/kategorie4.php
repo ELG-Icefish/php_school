@@ -18,7 +18,7 @@
   <tr>
     <td>
       <img src="../bilder/Gummi.jpg" alt="Gummibären" width="200" height="200">
-      <p>Gummibären<p>
+      <p>Gummibären     2.19€<p>
         <br>
       <p>
         <table>
@@ -54,7 +54,7 @@
   <tr>
     <td>
       <img src="../bilder/Schokolade.jpg" alt="Schokolade" width="200" height="200">
-      <p>Schokolade<p>
+      <p>Schokolade     1.15€<p>
         <br>
       <p>
         <table>
@@ -90,7 +90,7 @@
   <tr>
     <td>
       <img src="../bilder/Baklava.jpg" alt="Baklava"  height="200">
-      <p>Baklava<p>
+      <p>Baklava     2.50€<p>
         <br>
       <p>
         <table>

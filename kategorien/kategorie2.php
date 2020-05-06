@@ -18,7 +18,7 @@
   <tr>
     <td>
       <img src="../bilder/brot.png" alt="Brot" width="200" height="200">
-      <p>Brot<p>
+      <p>Brot     2.19€<p>
         <br>
       <p>
         <table>
@@ -54,7 +54,7 @@
   <tr>
     <td>
       <img src="../bilder/kaisersemmel.jpg" alt="kaisersemmel" width="200" height="200">
-      <p>Kaisersemmel<p>
+      <p>Kaisersemmel     1.50€<p>
         <br>
       <p>
         <table>
@@ -90,7 +90,7 @@
   <tr>
     <td>
       <img src="../bilder/baguette.jpg" alt="Baguette" width="200" height="200">
-      <p>Baguette<p>
+      <p>Baguette     3.05€<p>
         <br>
       <p>
         <table>
