@@ -14,3 +14,4 @@ Abgabetermin 17.4,
 Infos;
 Mehrere Kategorien 
 10 Produkte pro Kategorie
+xd
