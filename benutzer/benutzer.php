@@ -45,7 +45,7 @@
         $stmt->close();
           }
           $cookie = "user";
-          setcookie($cookie, $benutzer, "/");
+          setcookie($cookie, $benutzer, 0);
           /*Erstellt Cookie zur Speicherung des Benutzers
            "/" steht dafür dass das Cookie von Jeder Website ausgelesen werden kann*/
           sleep(3);

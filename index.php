@@ -89,7 +89,7 @@ $passwort1 = htmlspecialchars($_POST['password']);
 if ("$passwort1"=="$passwort2") {
   echo "erfolgreich";
 $cookie = "user";
-setcookie($cookie, $benutzer, "/");
+setcookie($cookie, $benutzer, 0);
 header('location: shop/shop.php');
 exit(1);
 }
